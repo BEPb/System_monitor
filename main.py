@@ -1,11 +1,21 @@
-from PyQt5 import QtWidgets , QtGui,QtCore
+# -*- coding: utf-8 -*-
+"""
+Python 3.9 программа мониторинга ресурсов системы (ОЗУ, процессор, жесткий диск)
+Название файла main.py
+
+Version: 0.1
+Author: Andrej Marinchenko
+Date: 2022-04-15
+"""
+
+from PyQt5 import QtWidgets
 from PyQt5.QtCore import QThread, pyqtSignal
 from appui import Ui_MainWindow
 import psutil
 import threading
 import time
 import sys
-import platform,socket,re,uuid,json,logging
+import platform,socket,re,uuid
 
 class MEM(QThread,Ui_MainWindow):
     """
@@ -22,6 +32,7 @@ class MEM(QThread,Ui_MainWindow):
 
         except:
             self.statusBar.showMessage("Error in getting Ram informations")
+
 class PROC(QThread,Ui_MainWindow):
     """
     Runs a cpu thread.
@@ -35,7 +46,8 @@ class PROC(QThread,Ui_MainWindow):
                 self.y.emit(int(value))
                 time.sleep(1)
         except:
-            self.statusBar.showMessage("Error in getting Cpu informations")     
+            self.statusBar.showMessage("Error in getting Cpu informations")
+
 class DISK(QThread,Ui_MainWindow):
     """
     Runs a disk thread.

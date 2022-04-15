@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
+"""
+Python 3.9 программа мониторинга ресурсов системы (ОЗУ, процессор, жесткий диск)
+Реализация формы, сгенерированная при чтении файла пользовательского интерфейса 'appui.ui'
+Название файла appui.py
 
-# Form implementation generated from reading ui file 'appui.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.2
-#
-# WARNING! All changes made in this file will be lost!
+Version: 0.1
+Author: Andrej Marinchenko
+Date: 2022-04-15
+"""
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+
+from PyQt5 import QtCore, QtWidgets
 
 
 class Ui_MainWindow(object):
