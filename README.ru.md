@@ -1,5 +1,5 @@
-# SystemMonitor
-<b>Python GUI program to monitor ram and cpu usage along with disk usage.</b>
+# System Monitor
+<b>Программа мониторинга в режиме реального времени использования оперативной памяти, процессора, а также использования жесткого диска. Написана на Python с поддержкой графического интерфейса.</b>
 <p>
   <img  src="https://img.shields.io/github/stars/BEPb/System_monitor" />
   <img src="https://img.shields.io/github/contributors/BEPb/System_monitor" />
